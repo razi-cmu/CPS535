@@ -1,0 +1,47 @@
+question,sql
+Kalamazoo has how many orders?,SELECT COUNT(*) FROM orders WHERE city = 'Kalamazoo'
+What number of AeroBeat Max orders got delivered?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Max' AND status = 'delivered'
+What number of Sport orders got sent back?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Sport' AND status = 'returned'
+What number of Max orders got cancelled?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Max' AND status = 'cancelled'
+Give me the names of Grand Rapids customers that purchased the AeroBeat Pro 2.,SELECT customer FROM orders WHERE city = 'Grand Rapids' AND product = 'AeroBeat Pro 2'
+Give me the names of Flint customers that purchased the Max.,SELECT customer FROM orders WHERE city = 'Flint' AND product = 'AeroBeat Max'
+Give me the names of Detroit customers that purchased the AeroBeat Lite.,SELECT customer FROM orders WHERE city = 'Detroit' AND product = 'AeroBeat Lite'
+Give me the names of Flint customers that purchased the Pro 2.,SELECT customer FROM orders WHERE city = 'Flint' AND product = 'AeroBeat Pro 2'
+Give me the names of Kalamazoo customers that purchased the AeroBeat Pro 2.,SELECT customer FROM orders WHERE city = 'Kalamazoo' AND product = 'AeroBeat Pro 2'
+Show me everything Chloe has purchased.,SELECT product FROM orders WHERE customer = 'Chloe'
+Show me everything Leo has purchased.,SELECT product FROM orders WHERE customer = 'Leo'
+Show me everything Zara has purchased.,SELECT product FROM orders WHERE customer = 'Zara'
+Show me everything Priya has purchased.,SELECT product FROM orders WHERE customer = 'Priya'
+Show me everything Omar has purchased.,SELECT product FROM orders WHERE customer = 'Omar'
+Show me everything Hannah has purchased.,SELECT product FROM orders WHERE customer = 'Hannah'
+Give the order numbers of Detroit orders that were shipped.,SELECT order_id FROM orders WHERE city = 'Detroit' AND status = 'shipped'
+Give the order numbers of Ann Arbor orders that were on the way.,SELECT order_id FROM orders WHERE city = 'Ann Arbor' AND status = 'shipped'
+Give the order numbers of Detroit orders that were delivered.,SELECT order_id FROM orders WHERE city = 'Detroit' AND status = 'delivered'
+Give the order numbers of Lansing orders that were shipped.,SELECT order_id FROM orders WHERE city = 'Lansing' AND status = 'shipped'
+What was the order count for August?,SELECT COUNT(*) FROM orders WHERE order_date LIKE '2026-08%'
+Give me the last 3 orders placed in Grand Rapids.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' ORDER BY order_date DESC LIMIT 3
+Give me the last 2 orders placed in Kalamazoo.,SELECT order_id FROM orders WHERE city = 'Kalamazoo' ORDER BY order_date DESC LIMIT 2
+Give me the last 5 orders placed in Ann Arbor.,SELECT order_id FROM orders WHERE city = 'Ann Arbor' ORDER BY order_date DESC LIMIT 5
+Give me the last 3 orders placed in Flint.,SELECT order_id FROM orders WHERE city = 'Flint' ORDER BY order_date DESC LIMIT 3
+Tell me the current status of order number 1028.,SELECT status FROM orders WHERE order_id = 1028
+Tell me the current status of order number 1053.,SELECT status FROM orders WHERE order_id = 1053
+Tell me the current status of order number 1079.,SELECT status FROM orders WHERE order_id = 1079
+Tell me the current status of order number 1065.,SELECT status FROM orders WHERE order_id = 1065
+Tell me the current status of order number 1029.,SELECT status FROM orders WHERE order_id = 1029
+Tell me the current status of order number 1073.,SELECT status FROM orders WHERE order_id = 1073
+Tell me the current status of order number 1006.,SELECT status FROM orders WHERE order_id = 1006
+Tell me the current status of order number 1050.,SELECT status FROM orders WHERE order_id = 1050
+What is the total number of orders by Yuki?,SELECT COUNT(*) FROM orders WHERE customer = 'Yuki'
+What is the total number of orders by Daniel?,SELECT COUNT(*) FROM orders WHERE customer = 'Daniel'
+What is the total number of orders by Jack?,SELECT COUNT(*) FROM orders WHERE customer = 'Jack'
+What is the total number of orders by Zara?,SELECT COUNT(*) FROM orders WHERE customer = 'Zara'
+What is the total number of orders by Marcus?,SELECT COUNT(*) FROM orders WHERE customer = 'Marcus'
+What is the total number of orders by Hannah?,SELECT COUNT(*) FROM orders WHERE customer = 'Hannah'
+Find the order date of Jack's Lite.,SELECT order_date FROM orders WHERE customer = 'Jack' AND product = 'AeroBeat Lite'
+Find the order date of Mei's AeroBeat Lite.,SELECT order_date FROM orders WHERE customer = 'Mei' AND product = 'AeroBeat Lite'
+Find the order date of Fatima's Pro 2.,SELECT order_date FROM orders WHERE customer = 'Fatima' AND product = 'AeroBeat Pro 2'
+Find the order date of Omar's AeroBeat Sport.,SELECT order_date FROM orders WHERE customer = 'Omar' AND product = 'AeroBeat Sport'
+Find the order date of Fatima's Max.,SELECT order_date FROM orders WHERE customer = 'Fatima' AND product = 'AeroBeat Max'
+Find the order date of Marcus's AeroBeat Lite.,SELECT order_date FROM orders WHERE customer = 'Marcus' AND product = 'AeroBeat Lite'
+Find the order date of Grace's Sport.,SELECT order_date FROM orders WHERE customer = 'Grace' AND product = 'AeroBeat Sport'
+Find the order date of Grace's AeroBeat Max.,SELECT order_date FROM orders WHERE customer = 'Grace' AND product = 'AeroBeat Max'

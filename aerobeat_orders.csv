@@ -1,0 +1,121 @@
+order_id,customer,product,city,order_date,status
+1001,Sara,AeroBeat Pro 2,Lansing,2026-09-20,delivered
+1002,Sofia,AeroBeat Max,Lansing,2026-10-17,delivered
+1003,Ben,AeroBeat Max,Grand Rapids,2026-08-03,cancelled
+1004,Sofia,AeroBeat Lite,Kalamazoo,2026-08-31,delivered
+1005,Nadia,AeroBeat Pro 2,Kalamazoo,2026-07-18,delivered
+1006,Jack,AeroBeat Lite,Grand Rapids,2026-10-11,delivered
+1007,Sofia,AeroBeat Sport,Ann Arbor,2026-07-13,shipped
+1008,Mateo,AeroBeat Sport,Kalamazoo,2026-09-10,delivered
+1009,Noah,AeroBeat Max,Ann Arbor,2026-09-20,cancelled
+1010,Omar,AeroBeat Pro 2,Lansing,2026-10-19,delivered
+1011,Amara,AeroBeat Pro 2,Kalamazoo,2026-10-01,returned
+1012,Hannah,AeroBeat Lite,Flint,2026-09-02,returned
+1013,Mei,AeroBeat Lite,Kalamazoo,2026-08-11,shipped
+1014,Priya,AeroBeat Max,Lansing,2026-07-29,delivered
+1015,Sofia,AeroBeat Max,Lansing,2026-07-11,cancelled
+1016,Amara,AeroBeat Pro 2,Kalamazoo,2026-08-08,delivered
+1017,Noah,AeroBeat Lite,Kalamazoo,2026-08-12,returned
+1018,Zara,AeroBeat Pro 2,Kalamazoo,2026-09-09,delivered
+1019,Fatima,AeroBeat Lite,Grand Rapids,2026-10-11,delivered
+1020,Daniel,AeroBeat Pro 2,Kalamazoo,2026-07-24,delivered
+1021,Mei,AeroBeat Pro 2,Flint,2026-09-23,delivered
+1022,Priya,AeroBeat Pro 2,Lansing,2026-10-05,delivered
+1023,Lina,AeroBeat Max,Flint,2026-10-23,shipped
+1024,Ethan,AeroBeat Lite,Detroit,2026-09-06,delivered
+1025,Lina,AeroBeat Max,Kalamazoo,2026-10-23,shipped
+1026,Ivan,AeroBeat Sport,Lansing,2026-08-05,delivered
+1027,Ben,AeroBeat Sport,Detroit,2026-08-11,shipped
+1028,Elena,AeroBeat Pro 2,Flint,2026-08-01,delivered
+1029,Daniel,AeroBeat Sport,Ann Arbor,2026-07-29,delivered
+1030,Ethan,AeroBeat Lite,Flint,2026-10-13,delivered
+1031,Fatima,AeroBeat Pro 2,Lansing,2026-07-29,delivered
+1032,Leo,AeroBeat Pro 2,Ann Arbor,2026-07-16,shipped
+1033,Lucas,AeroBeat Pro 2,Kalamazoo,2026-07-12,delivered
+1034,Daniel,AeroBeat Pro 2,Ann Arbor,2026-07-03,delivered
+1035,Omar,AeroBeat Pro 2,Kalamazoo,2026-07-27,shipped
+1036,Lina,AeroBeat Sport,Lansing,2026-08-24,shipped
+1037,Kofi,AeroBeat Sport,Ann Arbor,2026-07-29,delivered
+1038,Zara,AeroBeat Pro 2,Kalamazoo,2026-07-24,delivered
+1039,Grace,AeroBeat Lite,Grand Rapids,2026-07-13,shipped
+1040,Ben,AeroBeat Lite,Flint,2026-08-15,cancelled
+1041,Nadia,AeroBeat Pro 2,Flint,2026-09-25,delivered
+1042,Hannah,AeroBeat Sport,Lansing,2026-07-21,returned
+1043,Ivan,AeroBeat Lite,Lansing,2026-09-15,cancelled
+1044,Sofia,AeroBeat Sport,Flint,2026-08-30,shipped
+1045,Ivan,AeroBeat Sport,Detroit,2026-08-15,delivered
+1046,Zara,AeroBeat Pro 2,Grand Rapids,2026-09-10,shipped
+1047,Elena,AeroBeat Lite,Detroit,2026-10-03,delivered
+1048,Ravi,AeroBeat Sport,Flint,2026-10-06,cancelled
+1049,Sofia,AeroBeat Lite,Flint,2026-08-15,delivered
+1050,Mateo,AeroBeat Pro 2,Lansing,2026-08-09,delivered
+1051,Hannah,AeroBeat Lite,Detroit,2026-09-15,delivered
+1052,Grace,AeroBeat Max,Lansing,2026-07-29,shipped
+1053,Fatima,AeroBeat Max,Flint,2026-08-21,returned
+1054,Zara,AeroBeat Pro 2,Grand Rapids,2026-09-29,delivered
+1055,Yuki,AeroBeat Max,Kalamazoo,2026-09-28,delivered
+1056,Sofia,AeroBeat Pro 2,Ann Arbor,2026-09-16,shipped
+1057,Zara,AeroBeat Pro 2,Ann Arbor,2026-08-11,delivered
+1058,Chloe,AeroBeat Pro 2,Flint,2026-07-25,delivered
+1059,Grace,AeroBeat Max,Grand Rapids,2026-07-17,cancelled
+1060,Amara,AeroBeat Pro 2,Flint,2026-07-01,delivered
+1061,Aisha,AeroBeat Pro 2,Kalamazoo,2026-09-06,shipped
+1062,Kofi,AeroBeat Sport,Flint,2026-09-22,delivered
+1063,Marcus,AeroBeat Max,Flint,2026-07-24,delivered
+1064,Jack,AeroBeat Max,Lansing,2026-07-11,delivered
+1065,Chloe,AeroBeat Sport,Lansing,2026-10-19,delivered
+1066,Marcus,AeroBeat Pro 2,Lansing,2026-10-20,delivered
+1067,Elena,AeroBeat Sport,Grand Rapids,2026-07-06,delivered
+1068,Omar,AeroBeat Max,Flint,2026-09-11,cancelled
+1069,Chloe,AeroBeat Max,Grand Rapids,2026-09-21,cancelled
+1070,Aisha,AeroBeat Max,Kalamazoo,2026-10-20,delivered
+1071,Priya,AeroBeat Sport,Grand Rapids,2026-08-07,delivered
+1072,Amara,AeroBeat Pro 2,Grand Rapids,2026-08-13,shipped
+1073,Omar,AeroBeat Sport,Detroit,2026-10-08,shipped
+1074,Kofi,AeroBeat Sport,Ann Arbor,2026-07-20,cancelled
+1075,Lucas,AeroBeat Max,Flint,2026-09-09,delivered
+1076,Kofi,AeroBeat Lite,Kalamazoo,2026-07-31,cancelled
+1077,Grace,AeroBeat Sport,Grand Rapids,2026-10-02,delivered
+1078,Noah,AeroBeat Max,Ann Arbor,2026-08-23,delivered
+1079,Ethan,AeroBeat Sport,Lansing,2026-08-13,returned
+1080,Ben,AeroBeat Max,Lansing,2026-08-31,delivered
+1081,Ivan,AeroBeat Lite,Detroit,2026-08-08,delivered
+1082,Ethan,AeroBeat Pro 2,Lansing,2026-09-19,delivered
+1083,Sam,AeroBeat Lite,Lansing,2026-10-12,delivered
+1084,Grace,AeroBeat Sport,Ann Arbor,2026-08-19,delivered
+1085,Fatima,AeroBeat Lite,Ann Arbor,2026-10-26,delivered
+1086,Elena,AeroBeat Lite,Ann Arbor,2026-07-11,delivered
+1087,Mei,AeroBeat Pro 2,Kalamazoo,2026-07-25,delivered
+1088,Aisha,AeroBeat Pro 2,Ann Arbor,2026-08-27,shipped
+1089,Chloe,AeroBeat Pro 2,Detroit,2026-08-20,delivered
+1090,Aisha,AeroBeat Max,Ann Arbor,2026-09-18,delivered
+1091,Priya,AeroBeat Pro 2,Kalamazoo,2026-08-16,delivered
+1092,Grace,AeroBeat Max,Kalamazoo,2026-09-01,delivered
+1093,Sofia,AeroBeat Sport,Ann Arbor,2026-09-02,shipped
+1094,Marcus,AeroBeat Lite,Kalamazoo,2026-09-02,shipped
+1095,Sara,AeroBeat Sport,Flint,2026-09-17,cancelled
+1096,Lina,AeroBeat Sport,Lansing,2026-10-04,returned
+1097,Elena,AeroBeat Lite,Ann Arbor,2026-09-06,delivered
+1098,Amara,AeroBeat Max,Lansing,2026-09-13,delivered
+1099,Marcus,AeroBeat Pro 2,Lansing,2026-10-11,delivered
+1100,Kofi,AeroBeat Pro 2,Ann Arbor,2026-07-29,delivered
+1101,Ethan,AeroBeat Lite,Flint,2026-08-12,returned
+1102,Yuki,AeroBeat Max,Kalamazoo,2026-08-28,cancelled
+1103,Mei,AeroBeat Pro 2,Flint,2026-09-03,delivered
+1104,Aisha,AeroBeat Sport,Kalamazoo,2026-08-24,cancelled
+1105,Lina,AeroBeat Max,Ann Arbor,2026-10-24,delivered
+1106,Marcus,AeroBeat Pro 2,Flint,2026-09-16,delivered
+1107,Daniel,AeroBeat Sport,Kalamazoo,2026-10-22,delivered
+1108,Mei,AeroBeat Max,Grand Rapids,2026-09-11,delivered
+1109,Mateo,AeroBeat Max,Ann Arbor,2026-10-14,delivered
+1110,Jack,AeroBeat Lite,Detroit,2026-07-08,delivered
+1111,Hannah,AeroBeat Pro 2,Lansing,2026-08-06,shipped
+1112,Ben,AeroBeat Pro 2,Flint,2026-08-31,delivered
+1113,Ravi,AeroBeat Max,Lansing,2026-09-28,delivered
+1114,Zara,AeroBeat Pro 2,Lansing,2026-09-17,delivered
+1115,Sara,AeroBeat Pro 2,Kalamazoo,2026-08-30,shipped
+1116,Hannah,AeroBeat Pro 2,Flint,2026-09-18,delivered
+1117,Aisha,AeroBeat Max,Ann Arbor,2026-09-09,shipped
+1118,Leo,AeroBeat Max,Kalamazoo,2026-07-15,returned
+1119,Chloe,AeroBeat Pro 2,Flint,2026-09-19,cancelled
+1120,Ethan,AeroBeat Lite,Ann Arbor,2026-09-30,shipped

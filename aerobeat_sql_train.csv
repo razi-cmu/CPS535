@@ -1,0 +1,382 @@
+question,sql
+Which products has Sam bought?,SELECT product FROM orders WHERE customer = 'Sam'
+Count the Lite orders that were on the way.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'shipped'
+Who in Grand Rapids bought the Max?,SELECT customer FROM orders WHERE city = 'Grand Rapids' AND product = 'AeroBeat Max'
+Count the AeroBeat Max orders that were sent back.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Max' AND status = 'returned'
+Show the latest 2 orders in Detroit.,SELECT order_id FROM orders WHERE city = 'Detroit' ORDER BY order_date DESC LIMIT 2
+Which customers in Ann Arbor ordered the AeroBeat Max?,SELECT customer FROM orders WHERE city = 'Ann Arbor' AND product = 'AeroBeat Max'
+Show the orders from Ann Arbor that were canceled.,SELECT order_id FROM orders WHERE city = 'Ann Arbor' AND status = 'cancelled'
+What date did Elena buy the AeroBeat Lite?,SELECT order_date FROM orders WHERE customer = 'Elena' AND product = 'AeroBeat Lite'
+Who in Kalamazoo bought the Max?,SELECT customer FROM orders WHERE city = 'Kalamazoo' AND product = 'AeroBeat Max'
+How many orders were placed in Detroit?,SELECT COUNT(*) FROM orders WHERE city = 'Detroit'
+Show the orders from Kalamazoo that were canceled.,SELECT order_id FROM orders WHERE city = 'Kalamazoo' AND status = 'cancelled'
+List the order IDs in Kalamazoo that were returned.,SELECT order_id FROM orders WHERE city = 'Kalamazoo' AND status = 'returned'
+When did Mateo order the Sport?,SELECT order_date FROM orders WHERE customer = 'Mateo' AND product = 'AeroBeat Sport'
+Which products has Marcus bought?,SELECT product FROM orders WHERE customer = 'Marcus'
+How many orders were placed in July?,SELECT COUNT(*) FROM orders WHERE order_date LIKE '2026-07%'
+What is the status of order 1015?,SELECT status FROM orders WHERE order_id = 1015
+How many orders came from Ann Arbor?,SELECT COUNT(*) FROM orders WHERE city = 'Ann Arbor'
+Which orders from Grand Rapids were delivered?,SELECT order_id FROM orders WHERE city = 'Grand Rapids' AND status = 'delivered'
+Has order 1089 arrived yet?,SELECT status FROM orders WHERE order_id = 1089
+List the products ordered by Sofia.,SELECT product FROM orders WHERE customer = 'Sofia'
+List the products ordered by Lucas.,SELECT product FROM orders WHERE customer = 'Lucas'
+Show the orders from Flint that were shipped.,SELECT order_id FROM orders WHERE city = 'Flint' AND status = 'shipped'
+Count the Sport orders that were canceled.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Sport' AND status = 'cancelled'
+List the products ordered by Grace.,SELECT product FROM orders WHERE customer = 'Grace'
+Has order 1103 arrived yet?,SELECT status FROM orders WHERE order_id = 1103
+On which day did Amara purchase the Max?,SELECT order_date FROM orders WHERE customer = 'Amara' AND product = 'AeroBeat Max'
+How many orders of the Lite have been canceled?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'cancelled'
+List the products ordered by Yuki.,SELECT product FROM orders WHERE customer = 'Yuki'
+Who in Lansing bought the AeroBeat Sport?,SELECT customer FROM orders WHERE city = 'Lansing' AND product = 'AeroBeat Sport'
+How many orders came from Detroit?,SELECT COUNT(*) FROM orders WHERE city = 'Detroit'
+What are the 3 most recent orders from Lansing?,SELECT order_id FROM orders WHERE city = 'Lansing' ORDER BY order_date DESC LIMIT 3
+Where is order 1021 right now?,SELECT status FROM orders WHERE order_id = 1021
+Who in Ann Arbor bought the Lite?,SELECT customer FROM orders WHERE city = 'Ann Arbor' AND product = 'AeroBeat Lite'
+What date did Aisha buy the AeroBeat Max?,SELECT order_date FROM orders WHERE customer = 'Aisha' AND product = 'AeroBeat Max'
+Has order 1085 arrived yet?,SELECT status FROM orders WHERE order_id = 1085
+Who in Grand Rapids bought the Sport?,SELECT customer FROM orders WHERE city = 'Grand Rapids' AND product = 'AeroBeat Sport'
+List the customers from Kalamazoo who ordered the Sport.,SELECT customer FROM orders WHERE city = 'Kalamazoo' AND product = 'AeroBeat Sport'
+How many orders of the AeroBeat Pro 2 have been canceled?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'cancelled'
+What is the status of order 1017?,SELECT status FROM orders WHERE order_id = 1017
+How many orders came from Flint?,SELECT COUNT(*) FROM orders WHERE city = 'Flint'
+What did Lucas order?,SELECT product FROM orders WHERE customer = 'Lucas'
+What is the status of order 1043?,SELECT status FROM orders WHERE order_id = 1043
+Show the orders from Lansing that were delivered.,SELECT order_id FROM orders WHERE city = 'Lansing' AND status = 'delivered'
+List the 5 newest Lansing orders.,SELECT order_id FROM orders WHERE city = 'Lansing' ORDER BY order_date DESC LIMIT 5
+What is the status of order 1072?,SELECT status FROM orders WHERE order_id = 1072
+Which customers in Grand Rapids ordered the AeroBeat Lite?,SELECT customer FROM orders WHERE city = 'Grand Rapids' AND product = 'AeroBeat Lite'
+How many orders has Fatima placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Fatima'
+Where is order 1100 right now?,SELECT status FROM orders WHERE order_id = 1100
+How many AeroBeat Pro 2 orders were delivered?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'delivered'
+Who in Grand Rapids bought the AeroBeat Sport?,SELECT customer FROM orders WHERE city = 'Grand Rapids' AND product = 'AeroBeat Sport'
+How many Lite orders were on the way?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'shipped'
+List the 2 newest Grand Rapids orders.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' ORDER BY order_date DESC LIMIT 2
+Count Priya's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Priya'
+Count Leo's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Leo'
+How many orders has Sam placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Sam'
+List the order IDs in Lansing that were returned.,SELECT order_id FROM orders WHERE city = 'Lansing' AND status = 'returned'
+How many times did Ravi order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Ravi'
+How many orders has Mateo placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Mateo'
+How many Lite orders were cancelled?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'cancelled'
+How many orders of the AeroBeat Pro 2 have been sent back?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'returned'
+Which orders from Kalamazoo were delivered?,SELECT order_id FROM orders WHERE city = 'Kalamazoo' AND status = 'delivered'
+Count Nadia's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Nadia'
+Which products has Ben bought?,SELECT product FROM orders WHERE customer = 'Ben'
+Who in Flint bought the Lite?,SELECT customer FROM orders WHERE city = 'Flint' AND product = 'AeroBeat Lite'
+How many AeroBeat Lite orders were returned?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'returned'
+How many orders has Aisha placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Aisha'
+What are the 2 most recent orders from Flint?,SELECT order_id FROM orders WHERE city = 'Flint' ORDER BY order_date DESC LIMIT 2
+How many orders were placed in Lansing?,SELECT COUNT(*) FROM orders WHERE city = 'Lansing'
+What date did Sofia buy the AeroBeat Pro 2?,SELECT order_date FROM orders WHERE customer = 'Sofia' AND product = 'AeroBeat Pro 2'
+Count the Lite orders that were delivered.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'delivered'
+What did Yuki order?,SELECT product FROM orders WHERE customer = 'Yuki'
+Which customers in Flint ordered the Sport?,SELECT customer FROM orders WHERE city = 'Flint' AND product = 'AeroBeat Sport'
+When did Ben order the AeroBeat Sport?,SELECT order_date FROM orders WHERE customer = 'Ben' AND product = 'AeroBeat Sport'
+Which orders from Grand Rapids were cancelled?,SELECT order_id FROM orders WHERE city = 'Grand Rapids' AND status = 'cancelled'
+Show the latest 3 orders in Ann Arbor.,SELECT order_id FROM orders WHERE city = 'Ann Arbor' ORDER BY order_date DESC LIMIT 3
+Show the latest 3 orders in Detroit.,SELECT order_id FROM orders WHERE city = 'Detroit' ORDER BY order_date DESC LIMIT 3
+List the products ordered by Kofi.,SELECT product FROM orders WHERE customer = 'Kofi'
+List the 3 newest Lansing orders.,SELECT order_id FROM orders WHERE city = 'Lansing' ORDER BY order_date DESC LIMIT 3
+Show the orders from Ann Arbor that were delivered.,SELECT order_id FROM orders WHERE city = 'Ann Arbor' AND status = 'delivered'
+Has order 1020 arrived yet?,SELECT status FROM orders WHERE order_id = 1020
+How many orders has Ben placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Ben'
+How many times did Lina order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Lina'
+Show the latest 5 orders in Lansing.,SELECT order_id FROM orders WHERE city = 'Lansing' ORDER BY order_date DESC LIMIT 5
+Count Mei's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Mei'
+Count the orders from Flint.,SELECT COUNT(*) FROM orders WHERE city = 'Flint'
+Show the latest 5 orders in Grand Rapids.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' ORDER BY order_date DESC LIMIT 5
+How many orders of the AeroBeat Sport have been delivered?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Sport' AND status = 'delivered'
+Show the orders from Kalamazoo that were on the way.,SELECT order_id FROM orders WHERE city = 'Kalamazoo' AND status = 'shipped'
+Where is order 1004 right now?,SELECT status FROM orders WHERE order_id = 1004
+What did Sam order?,SELECT product FROM orders WHERE customer = 'Sam'
+Count Sara's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Sara'
+Which products has Sofia bought?,SELECT product FROM orders WHERE customer = 'Sofia'
+Which products has Nadia bought?,SELECT product FROM orders WHERE customer = 'Nadia'
+List the order IDs in Grand Rapids that were shipped.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' AND status = 'shipped'
+List the customers from Grand Rapids who ordered the AeroBeat Max.,SELECT customer FROM orders WHERE city = 'Grand Rapids' AND product = 'AeroBeat Max'
+Count Amara's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Amara'
+How many AeroBeat Lite orders were sent back?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'returned'
+List the customers from Lansing who ordered the AeroBeat Lite.,SELECT customer FROM orders WHERE city = 'Lansing' AND product = 'AeroBeat Lite'
+Show the orders from Kalamazoo that were delivered.,SELECT order_id FROM orders WHERE city = 'Kalamazoo' AND status = 'delivered'
+Show the latest 5 orders in Detroit.,SELECT order_id FROM orders WHERE city = 'Detroit' ORDER BY order_date DESC LIMIT 5
+When did Lina order the Sport?,SELECT order_date FROM orders WHERE customer = 'Lina' AND product = 'AeroBeat Sport'
+List the 5 newest Detroit orders.,SELECT order_id FROM orders WHERE city = 'Detroit' ORDER BY order_date DESC LIMIT 5
+What is the status of order 1026?,SELECT status FROM orders WHERE order_id = 1026
+Where is order 1008 right now?,SELECT status FROM orders WHERE order_id = 1008
+What did Sofia order?,SELECT product FROM orders WHERE customer = 'Sofia'
+How many orders did we get in July 2026?,SELECT COUNT(*) FROM orders WHERE order_date LIKE '2026-07%'
+What is the status of order 1019?,SELECT status FROM orders WHERE order_id = 1019
+Has order 1061 arrived yet?,SELECT status FROM orders WHERE order_id = 1061
+Which orders from Flint were shipped?,SELECT order_id FROM orders WHERE city = 'Flint' AND status = 'shipped'
+How many orders were placed in September?,SELECT COUNT(*) FROM orders WHERE order_date LIKE '2026-09%'
+Count the AeroBeat Max orders that were returned.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Max' AND status = 'returned'
+When did Elena order the Lite?,SELECT order_date FROM orders WHERE customer = 'Elena' AND product = 'AeroBeat Lite'
+List the products ordered by Fatima.,SELECT product FROM orders WHERE customer = 'Fatima'
+List the products ordered by Ravi.,SELECT product FROM orders WHERE customer = 'Ravi'
+How many Pro 2 orders were on the way?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'shipped'
+List the products ordered by Sam.,SELECT product FROM orders WHERE customer = 'Sam'
+What date did Mei buy the AeroBeat Pro 2?,SELECT order_date FROM orders WHERE customer = 'Mei' AND product = 'AeroBeat Pro 2'
+How many orders of the AeroBeat Lite have been shipped?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'shipped'
+How many times did Chloe order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Chloe'
+What is the status of order 1052?,SELECT status FROM orders WHERE order_id = 1052
+Count the AeroBeat Lite orders that were canceled.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'cancelled'
+How many orders of the Sport have been canceled?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Sport' AND status = 'cancelled'
+What date did Chloe buy the AeroBeat Pro 2?,SELECT order_date FROM orders WHERE customer = 'Chloe' AND product = 'AeroBeat Pro 2'
+How many orders has Priya placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Priya'
+How many orders has Kofi placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Kofi'
+Who in Flint bought the AeroBeat Sport?,SELECT customer FROM orders WHERE city = 'Flint' AND product = 'AeroBeat Sport'
+List the 5 newest Grand Rapids orders.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' ORDER BY order_date DESC LIMIT 5
+What date did Ben buy the AeroBeat Sport?,SELECT order_date FROM orders WHERE customer = 'Ben' AND product = 'AeroBeat Sport'
+Which customers in Flint ordered the AeroBeat Sport?,SELECT customer FROM orders WHERE city = 'Flint' AND product = 'AeroBeat Sport'
+List the products ordered by Marcus.,SELECT product FROM orders WHERE customer = 'Marcus'
+What did Grace order?,SELECT product FROM orders WHERE customer = 'Grace'
+On which day did Ethan purchase the AeroBeat Pro 2?,SELECT order_date FROM orders WHERE customer = 'Ethan' AND product = 'AeroBeat Pro 2'
+List the 2 newest Flint orders.,SELECT order_id FROM orders WHERE city = 'Flint' ORDER BY order_date DESC LIMIT 2
+How many orders of the Lite have been on the way?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'shipped'
+List the order IDs in Grand Rapids that were cancelled.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' AND status = 'cancelled'
+List the customers from Grand Rapids who ordered the Max.,SELECT customer FROM orders WHERE city = 'Grand Rapids' AND product = 'AeroBeat Max'
+What date did Amara buy the AeroBeat Max?,SELECT order_date FROM orders WHERE customer = 'Amara' AND product = 'AeroBeat Max'
+Count Omar's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Omar'
+Who in Lansing bought the Max?,SELECT customer FROM orders WHERE city = 'Lansing' AND product = 'AeroBeat Max'
+How many orders of the Pro 2 have been shipped?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'shipped'
+How many orders did we get in October 2026?,SELECT COUNT(*) FROM orders WHERE order_date LIKE '2026-10%'
+Which orders from Ann Arbor were canceled?,SELECT order_id FROM orders WHERE city = 'Ann Arbor' AND status = 'cancelled'
+What did Mateo order?,SELECT product FROM orders WHERE customer = 'Mateo'
+List the customers from Flint who ordered the Sport.,SELECT customer FROM orders WHERE city = 'Flint' AND product = 'AeroBeat Sport'
+What are the 2 most recent orders from Lansing?,SELECT order_id FROM orders WHERE city = 'Lansing' ORDER BY order_date DESC LIMIT 2
+Count the AeroBeat Max orders that were shipped.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Max' AND status = 'shipped'
+Which customers in Ann Arbor ordered the Sport?,SELECT customer FROM orders WHERE city = 'Ann Arbor' AND product = 'AeroBeat Sport'
+How many Lite orders were returned?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'returned'
+List the 2 newest Ann Arbor orders.,SELECT order_id FROM orders WHERE city = 'Ann Arbor' ORDER BY order_date DESC LIMIT 2
+How many Pro 2 orders were sent back?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'returned'
+List the 5 newest Flint orders.,SELECT order_id FROM orders WHERE city = 'Flint' ORDER BY order_date DESC LIMIT 5
+Which customers in Lansing ordered the AeroBeat Pro 2?,SELECT customer FROM orders WHERE city = 'Lansing' AND product = 'AeroBeat Pro 2'
+Show the latest 2 orders in Ann Arbor.,SELECT order_id FROM orders WHERE city = 'Ann Arbor' ORDER BY order_date DESC LIMIT 2
+Who in Flint bought the Sport?,SELECT customer FROM orders WHERE city = 'Flint' AND product = 'AeroBeat Sport'
+What is the status of order 1091?,SELECT status FROM orders WHERE order_id = 1091
+List the order IDs in Flint that were shipped.,SELECT order_id FROM orders WHERE city = 'Flint' AND status = 'shipped'
+Show the orders from Grand Rapids that were delivered.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' AND status = 'delivered'
+Count the orders from Lansing.,SELECT COUNT(*) FROM orders WHERE city = 'Lansing'
+Where is order 1070 right now?,SELECT status FROM orders WHERE order_id = 1070
+Which products has Noah bought?,SELECT product FROM orders WHERE customer = 'Noah'
+Has order 1117 arrived yet?,SELECT status FROM orders WHERE order_id = 1117
+When did Chloe order the Max?,SELECT order_date FROM orders WHERE customer = 'Chloe' AND product = 'AeroBeat Max'
+What are the 5 most recent orders from Detroit?,SELECT order_id FROM orders WHERE city = 'Detroit' ORDER BY order_date DESC LIMIT 5
+List the customers from Flint who ordered the AeroBeat Sport.,SELECT customer FROM orders WHERE city = 'Flint' AND product = 'AeroBeat Sport'
+Where is order 1088 right now?,SELECT status FROM orders WHERE order_id = 1088
+What are the 2 most recent orders from Grand Rapids?,SELECT order_id FROM orders WHERE city = 'Grand Rapids' ORDER BY order_date DESC LIMIT 2
+How many orders came from Grand Rapids?,SELECT COUNT(*) FROM orders WHERE city = 'Grand Rapids'
+What did Noah order?,SELECT product FROM orders WHERE customer = 'Noah'
+Count the Max orders that were shipped.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Max' AND status = 'shipped'
+Count Chloe's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Chloe'
+Which orders from Grand Rapids were canceled?,SELECT order_id FROM orders WHERE city = 'Grand Rapids' AND status = 'cancelled'
+How many Max orders were shipped?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Max' AND status = 'shipped'
+How many orders of the Pro 2 have been canceled?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'cancelled'
+Show the orders from Grand Rapids that were canceled.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' AND status = 'cancelled'
+When did Fatima order the Lite?,SELECT order_date FROM orders WHERE customer = 'Fatima' AND product = 'AeroBeat Lite'
+How many orders of the AeroBeat Pro 2 have been returned?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'returned'
+What is the status of order 1074?,SELECT status FROM orders WHERE order_id = 1074
+How many times did Grace order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Grace'
+Who in Kalamazoo bought the AeroBeat Max?,SELECT customer FROM orders WHERE city = 'Kalamazoo' AND product = 'AeroBeat Max'
+Show the latest 2 orders in Lansing.,SELECT order_id FROM orders WHERE city = 'Lansing' ORDER BY order_date DESC LIMIT 2
+Which orders from Kalamazoo were sent back?,SELECT order_id FROM orders WHERE city = 'Kalamazoo' AND status = 'returned'
+Count the Sport orders that were shipped.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Sport' AND status = 'shipped'
+Which products has Ravi bought?,SELECT product FROM orders WHERE customer = 'Ravi'
+Has order 1033 arrived yet?,SELECT status FROM orders WHERE order_id = 1033
+What did Nadia order?,SELECT product FROM orders WHERE customer = 'Nadia'
+On which day did Noah purchase the AeroBeat Lite?,SELECT order_date FROM orders WHERE customer = 'Noah' AND product = 'AeroBeat Lite'
+List the order IDs in Lansing that were delivered.,SELECT order_id FROM orders WHERE city = 'Lansing' AND status = 'delivered'
+What date did Fatima buy the AeroBeat Lite?,SELECT order_date FROM orders WHERE customer = 'Fatima' AND product = 'AeroBeat Lite'
+When did Elena order the Sport?,SELECT order_date FROM orders WHERE customer = 'Elena' AND product = 'AeroBeat Sport'
+What is the status of order 1062?,SELECT status FROM orders WHERE order_id = 1062
+Which orders from Kalamazoo were cancelled?,SELECT order_id FROM orders WHERE city = 'Kalamazoo' AND status = 'cancelled'
+Where is order 1093 right now?,SELECT status FROM orders WHERE order_id = 1093
+Which products has Fatima bought?,SELECT product FROM orders WHERE customer = 'Fatima'
+On which day did Ben purchase the Lite?,SELECT order_date FROM orders WHERE customer = 'Ben' AND product = 'AeroBeat Lite'
+Has order 1077 arrived yet?,SELECT status FROM orders WHERE order_id = 1077
+Which products has Amara bought?,SELECT product FROM orders WHERE customer = 'Amara'
+What did Elena order?,SELECT product FROM orders WHERE customer = 'Elena'
+How many orders has Sofia placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Sofia'
+List the products ordered by Daniel.,SELECT product FROM orders WHERE customer = 'Daniel'
+What date did Mei buy the Pro 2?,SELECT order_date FROM orders WHERE customer = 'Mei' AND product = 'AeroBeat Pro 2'
+Which customers in Grand Rapids ordered the Max?,SELECT customer FROM orders WHERE city = 'Grand Rapids' AND product = 'AeroBeat Max'
+Count the AeroBeat Sport orders that were canceled.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Sport' AND status = 'cancelled'
+Show the latest 3 orders in Lansing.,SELECT order_id FROM orders WHERE city = 'Lansing' ORDER BY order_date DESC LIMIT 3
+Which orders from Flint were delivered?,SELECT order_id FROM orders WHERE city = 'Flint' AND status = 'delivered'
+When did Omar order the Pro 2?,SELECT order_date FROM orders WHERE customer = 'Omar' AND product = 'AeroBeat Pro 2'
+List the 3 newest Ann Arbor orders.,SELECT order_id FROM orders WHERE city = 'Ann Arbor' ORDER BY order_date DESC LIMIT 3
+What date did Hannah buy the AeroBeat Lite?,SELECT order_date FROM orders WHERE customer = 'Hannah' AND product = 'AeroBeat Lite'
+Show the orders from Grand Rapids that were cancelled.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' AND status = 'cancelled'
+What is the status of order 1080?,SELECT status FROM orders WHERE order_id = 1080
+How many times did Sam order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Sam'
+List the customers from Kalamazoo who ordered the AeroBeat Lite.,SELECT customer FROM orders WHERE city = 'Kalamazoo' AND product = 'AeroBeat Lite'
+What date did Ivan buy the Sport?,SELECT order_date FROM orders WHERE customer = 'Ivan' AND product = 'AeroBeat Sport'
+Show the orders from Grand Rapids that were shipped.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' AND status = 'shipped'
+List the 5 newest Kalamazoo orders.,SELECT order_id FROM orders WHERE city = 'Kalamazoo' ORDER BY order_date DESC LIMIT 5
+On which day did Lina purchase the AeroBeat Max?,SELECT order_date FROM orders WHERE customer = 'Lina' AND product = 'AeroBeat Max'
+Count the AeroBeat Sport orders that were on the way.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Sport' AND status = 'shipped'
+List the products ordered by Amara.,SELECT product FROM orders WHERE customer = 'Amara'
+Which orders from Lansing were canceled?,SELECT order_id FROM orders WHERE city = 'Lansing' AND status = 'cancelled'
+Show the orders from Flint that were delivered.,SELECT order_id FROM orders WHERE city = 'Flint' AND status = 'delivered'
+How many orders has Ivan placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Ivan'
+What did Fatima order?,SELECT product FROM orders WHERE customer = 'Fatima'
+What is the status of order 1011?,SELECT status FROM orders WHERE order_id = 1011
+Count the orders from Ann Arbor.,SELECT COUNT(*) FROM orders WHERE city = 'Ann Arbor'
+Which orders from Kalamazoo were returned?,SELECT order_id FROM orders WHERE city = 'Kalamazoo' AND status = 'returned'
+When did Amara order the Max?,SELECT order_date FROM orders WHERE customer = 'Amara' AND product = 'AeroBeat Max'
+What date did Mei buy the Max?,SELECT order_date FROM orders WHERE customer = 'Mei' AND product = 'AeroBeat Max'
+What are the 5 most recent orders from Grand Rapids?,SELECT order_id FROM orders WHERE city = 'Grand Rapids' ORDER BY order_date DESC LIMIT 5
+How many orders did we get in September 2026?,SELECT COUNT(*) FROM orders WHERE order_date LIKE '2026-09%'
+Show the latest 3 orders in Kalamazoo.,SELECT order_id FROM orders WHERE city = 'Kalamazoo' ORDER BY order_date DESC LIMIT 3
+On which day did Ethan purchase the AeroBeat Lite?,SELECT order_date FROM orders WHERE customer = 'Ethan' AND product = 'AeroBeat Lite'
+How many Sport orders were delivered?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Sport' AND status = 'delivered'
+Which products has Elena bought?,SELECT product FROM orders WHERE customer = 'Elena'
+How many times did Elena order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Elena'
+List the 3 newest Kalamazoo orders.,SELECT order_id FROM orders WHERE city = 'Kalamazoo' ORDER BY order_date DESC LIMIT 3
+What is the status of order 1067?,SELECT status FROM orders WHERE order_id = 1067
+Which products has Ethan bought?,SELECT product FROM orders WHERE customer = 'Ethan'
+What date did Lina buy the AeroBeat Sport?,SELECT order_date FROM orders WHERE customer = 'Lina' AND product = 'AeroBeat Sport'
+What is the status of order 1008?,SELECT status FROM orders WHERE order_id = 1008
+Count Sofia's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Sofia'
+What did Ivan order?,SELECT product FROM orders WHERE customer = 'Ivan'
+Where is order 1026 right now?,SELECT status FROM orders WHERE order_id = 1026
+How many orders of the AeroBeat Pro 2 have been delivered?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'delivered'
+Has order 1081 arrived yet?,SELECT status FROM orders WHERE order_id = 1081
+Has order 1104 arrived yet?,SELECT status FROM orders WHERE order_id = 1104
+Has order 1062 arrived yet?,SELECT status FROM orders WHERE order_id = 1062
+On which day did Elena purchase the Lite?,SELECT order_date FROM orders WHERE customer = 'Elena' AND product = 'AeroBeat Lite'
+List the customers from Flint who ordered the Lite.,SELECT customer FROM orders WHERE city = 'Flint' AND product = 'AeroBeat Lite'
+Who in Ann Arbor bought the AeroBeat Lite?,SELECT customer FROM orders WHERE city = 'Ann Arbor' AND product = 'AeroBeat Lite'
+List the order IDs in Grand Rapids that were on the way.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' AND status = 'shipped'
+Has order 1030 arrived yet?,SELECT status FROM orders WHERE order_id = 1030
+Who in Kalamazoo bought the Sport?,SELECT customer FROM orders WHERE city = 'Kalamazoo' AND product = 'AeroBeat Sport'
+Who in Detroit bought the Pro 2?,SELECT customer FROM orders WHERE city = 'Detroit' AND product = 'AeroBeat Pro 2'
+What date did Ben buy the Sport?,SELECT order_date FROM orders WHERE customer = 'Ben' AND product = 'AeroBeat Sport'
+What date did Fatima buy the Lite?,SELECT order_date FROM orders WHERE customer = 'Fatima' AND product = 'AeroBeat Lite'
+How many AeroBeat Max orders were on the way?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Max' AND status = 'shipped'
+Which orders from Ann Arbor were delivered?,SELECT order_id FROM orders WHERE city = 'Ann Arbor' AND status = 'delivered'
+List the order IDs in Lansing that were sent back.,SELECT order_id FROM orders WHERE city = 'Lansing' AND status = 'returned'
+Who in Lansing bought the AeroBeat Max?,SELECT customer FROM orders WHERE city = 'Lansing' AND product = 'AeroBeat Max'
+Which customers in Grand Rapids ordered the AeroBeat Max?,SELECT customer FROM orders WHERE city = 'Grand Rapids' AND product = 'AeroBeat Max'
+When did Ravi order the Sport?,SELECT order_date FROM orders WHERE customer = 'Ravi' AND product = 'AeroBeat Sport'
+Show the latest 5 orders in Kalamazoo.,SELECT order_id FROM orders WHERE city = 'Kalamazoo' ORDER BY order_date DESC LIMIT 5
+Show the orders from Lansing that were cancelled.,SELECT order_id FROM orders WHERE city = 'Lansing' AND status = 'cancelled'
+How many orders were placed in Ann Arbor?,SELECT COUNT(*) FROM orders WHERE city = 'Ann Arbor'
+How many orders of the Sport have been delivered?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Sport' AND status = 'delivered'
+What date did Lucas buy the Max?,SELECT order_date FROM orders WHERE customer = 'Lucas' AND product = 'AeroBeat Max'
+Which customers in Ann Arbor ordered the AeroBeat Lite?,SELECT customer FROM orders WHERE city = 'Ann Arbor' AND product = 'AeroBeat Lite'
+Count Mateo's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Mateo'
+Where is order 1007 right now?,SELECT status FROM orders WHERE order_id = 1007
+Where is order 1099 right now?,SELECT status FROM orders WHERE order_id = 1099
+Which products has Aisha bought?,SELECT product FROM orders WHERE customer = 'Aisha'
+Which customers in Ann Arbor ordered the AeroBeat Pro 2?,SELECT customer FROM orders WHERE city = 'Ann Arbor' AND product = 'AeroBeat Pro 2'
+How many times did Leo order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Leo'
+List the order IDs in Kalamazoo that were on the way.,SELECT order_id FROM orders WHERE city = 'Kalamazoo' AND status = 'shipped'
+What are the 3 most recent orders from Ann Arbor?,SELECT order_id FROM orders WHERE city = 'Ann Arbor' ORDER BY order_date DESC LIMIT 3
+On which day did Sofia purchase the Pro 2?,SELECT order_date FROM orders WHERE customer = 'Sofia' AND product = 'AeroBeat Pro 2'
+Who in Ann Arbor bought the Pro 2?,SELECT customer FROM orders WHERE city = 'Ann Arbor' AND product = 'AeroBeat Pro 2'
+What is the status of order 1069?,SELECT status FROM orders WHERE order_id = 1069
+How many orders of the AeroBeat Pro 2 have been cancelled?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'cancelled'
+Which orders from Grand Rapids were shipped?,SELECT order_id FROM orders WHERE city = 'Grand Rapids' AND status = 'shipped'
+How many times did Omar order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Omar'
+How many AeroBeat Lite orders were canceled?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'cancelled'
+Show the orders from Kalamazoo that were cancelled.,SELECT order_id FROM orders WHERE city = 'Kalamazoo' AND status = 'cancelled'
+How many times did Mei order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Mei'
+How many orders were placed in Grand Rapids?,SELECT COUNT(*) FROM orders WHERE city = 'Grand Rapids'
+How many Pro 2 orders were delivered?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'delivered'
+On which day did Noah purchase the Lite?,SELECT order_date FROM orders WHERE customer = 'Noah' AND product = 'AeroBeat Lite'
+Count Kofi's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Kofi'
+List the products ordered by Jack.,SELECT product FROM orders WHERE customer = 'Jack'
+On which day did Sam purchase the Lite?,SELECT order_date FROM orders WHERE customer = 'Sam' AND product = 'AeroBeat Lite'
+Who in Detroit bought the AeroBeat Sport?,SELECT customer FROM orders WHERE city = 'Detroit' AND product = 'AeroBeat Sport'
+What are the 3 most recent orders from Kalamazoo?,SELECT order_id FROM orders WHERE city = 'Kalamazoo' ORDER BY order_date DESC LIMIT 3
+Which orders from Lansing were sent back?,SELECT order_id FROM orders WHERE city = 'Lansing' AND status = 'returned'
+Count the orders from Detroit.,SELECT COUNT(*) FROM orders WHERE city = 'Detroit'
+Which orders from Kalamazoo were on the way?,SELECT order_id FROM orders WHERE city = 'Kalamazoo' AND status = 'shipped'
+How many Max orders were on the way?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Max' AND status = 'shipped'
+Which products has Mateo bought?,SELECT product FROM orders WHERE customer = 'Mateo'
+When did Lina order the AeroBeat Max?,SELECT order_date FROM orders WHERE customer = 'Lina' AND product = 'AeroBeat Max'
+Show the latest 2 orders in Flint.,SELECT order_id FROM orders WHERE city = 'Flint' ORDER BY order_date DESC LIMIT 2
+Which products has Mei bought?,SELECT product FROM orders WHERE customer = 'Mei'
+Count the orders from Grand Rapids.,SELECT COUNT(*) FROM orders WHERE city = 'Grand Rapids'
+What did Lina order?,SELECT product FROM orders WHERE customer = 'Lina'
+Count Ivan's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Ivan'
+How many times did Priya order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Priya'
+What are the 5 most recent orders from Flint?,SELECT order_id FROM orders WHERE city = 'Flint' ORDER BY order_date DESC LIMIT 5
+Show the orders from Flint that were cancelled.,SELECT order_id FROM orders WHERE city = 'Flint' AND status = 'cancelled'
+List the order IDs in Flint that were cancelled.,SELECT order_id FROM orders WHERE city = 'Flint' AND status = 'cancelled'
+Show the latest 5 orders in Flint.,SELECT order_id FROM orders WHERE city = 'Flint' ORDER BY order_date DESC LIMIT 5
+List the products ordered by Mateo.,SELECT product FROM orders WHERE customer = 'Mateo'
+How many orders of the Sport have been shipped?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Sport' AND status = 'shipped'
+Has order 1034 arrived yet?,SELECT status FROM orders WHERE order_id = 1034
+On which day did Ben purchase the Max?,SELECT order_date FROM orders WHERE customer = 'Ben' AND product = 'AeroBeat Max'
+What are the 2 most recent orders from Detroit?,SELECT order_id FROM orders WHERE city = 'Detroit' ORDER BY order_date DESC LIMIT 2
+Who in Ann Arbor bought the AeroBeat Sport?,SELECT customer FROM orders WHERE city = 'Ann Arbor' AND product = 'AeroBeat Sport'
+Count the orders from July.,SELECT COUNT(*) FROM orders WHERE order_date LIKE '2026-07%'
+Show the orders from Ann Arbor that were cancelled.,SELECT order_id FROM orders WHERE city = 'Ann Arbor' AND status = 'cancelled'
+Count Elena's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Elena'
+Count the AeroBeat Lite orders that were on the way.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'shipped'
+What date did Marcus buy the Pro 2?,SELECT order_date FROM orders WHERE customer = 'Marcus' AND product = 'AeroBeat Pro 2'
+Count the orders from September.,SELECT COUNT(*) FROM orders WHERE order_date LIKE '2026-09%'
+Which products has Jack bought?,SELECT product FROM orders WHERE customer = 'Jack'
+How many orders of the AeroBeat Lite have been sent back?,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'returned'
+How many orders has Sara placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Sara'
+List the 3 newest Detroit orders.,SELECT order_id FROM orders WHERE city = 'Detroit' ORDER BY order_date DESC LIMIT 3
+Who in Detroit bought the AeroBeat Pro 2?,SELECT customer FROM orders WHERE city = 'Detroit' AND product = 'AeroBeat Pro 2'
+What is the status of order 1117?,SELECT status FROM orders WHERE order_id = 1117
+What date did Lina buy the Sport?,SELECT order_date FROM orders WHERE customer = 'Lina' AND product = 'AeroBeat Sport'
+List the order IDs in Flint that were on the way.,SELECT order_id FROM orders WHERE city = 'Flint' AND status = 'shipped'
+Who in Grand Rapids bought the Lite?,SELECT customer FROM orders WHERE city = 'Grand Rapids' AND product = 'AeroBeat Lite'
+List the customers from Kalamazoo who ordered the AeroBeat Sport.,SELECT customer FROM orders WHERE city = 'Kalamazoo' AND product = 'AeroBeat Sport'
+List the order IDs in Ann Arbor that were canceled.,SELECT order_id FROM orders WHERE city = 'Ann Arbor' AND status = 'cancelled'
+Where is order 1020 right now?,SELECT status FROM orders WHERE order_id = 1020
+Who in Lansing bought the Sport?,SELECT customer FROM orders WHERE city = 'Lansing' AND product = 'AeroBeat Sport'
+How many orders has Ethan placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Ethan'
+What is the status of order 1007?,SELECT status FROM orders WHERE order_id = 1007
+How many orders were placed in Flint?,SELECT COUNT(*) FROM orders WHERE city = 'Flint'
+Count Ethan's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Ethan'
+How many orders has Mei placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Mei'
+List the products ordered by Ethan.,SELECT product FROM orders WHERE customer = 'Ethan'
+What date did Sofia buy the Pro 2?,SELECT order_date FROM orders WHERE customer = 'Sofia' AND product = 'AeroBeat Pro 2'
+How many orders were placed in October?,SELECT COUNT(*) FROM orders WHERE order_date LIKE '2026-10%'
+List the order IDs in Lansing that were canceled.,SELECT order_id FROM orders WHERE city = 'Lansing' AND status = 'cancelled'
+Count the Pro 2 orders that were delivered.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'delivered'
+On which day did Chloe purchase the AeroBeat Pro 2?,SELECT order_date FROM orders WHERE customer = 'Chloe' AND product = 'AeroBeat Pro 2'
+What did Sara order?,SELECT product FROM orders WHERE customer = 'Sara'
+List the 2 newest Detroit orders.,SELECT order_id FROM orders WHERE city = 'Detroit' ORDER BY order_date DESC LIMIT 2
+Which products has Sara bought?,SELECT product FROM orders WHERE customer = 'Sara'
+What are the 3 most recent orders from Detroit?,SELECT order_id FROM orders WHERE city = 'Detroit' ORDER BY order_date DESC LIMIT 3
+On which day did Grace purchase the AeroBeat Lite?,SELECT order_date FROM orders WHERE customer = 'Grace' AND product = 'AeroBeat Lite'
+What are the 5 most recent orders from Lansing?,SELECT order_id FROM orders WHERE city = 'Lansing' ORDER BY order_date DESC LIMIT 5
+Count the AeroBeat Pro 2 orders that were returned.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Pro 2' AND status = 'returned'
+How many orders has Amara placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Amara'
+How many orders has Lina placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Lina'
+When did Aisha order the Sport?,SELECT order_date FROM orders WHERE customer = 'Aisha' AND product = 'AeroBeat Sport'
+How many times did Sofia order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Sofia'
+List the customers from Grand Rapids who ordered the AeroBeat Lite.,SELECT customer FROM orders WHERE city = 'Grand Rapids' AND product = 'AeroBeat Lite'
+Count the AeroBeat Lite orders that were sent back.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'returned'
+How many times did Ethan order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Ethan'
+When did Kofi order the Sport?,SELECT order_date FROM orders WHERE customer = 'Kofi' AND product = 'AeroBeat Sport'
+Has order 1027 arrived yet?,SELECT status FROM orders WHERE order_id = 1027
+Count Ben's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Ben'
+How many times did Mateo order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Mateo'
+Show the orders from Grand Rapids that were on the way.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' AND status = 'shipped'
+What are the 2 most recent orders from Ann Arbor?,SELECT order_id FROM orders WHERE city = 'Ann Arbor' ORDER BY order_date DESC LIMIT 2
+Count Lucas's orders.,SELECT COUNT(*) FROM orders WHERE customer = 'Lucas'
+What did Ravi order?,SELECT product FROM orders WHERE customer = 'Ravi'
+Count the orders from October.,SELECT COUNT(*) FROM orders WHERE order_date LIKE '2026-10%'
+Where is order 1027 right now?,SELECT status FROM orders WHERE order_id = 1027
+What are the 5 most recent orders from Kalamazoo?,SELECT order_id FROM orders WHERE city = 'Kalamazoo' ORDER BY order_date DESC LIMIT 5
+Where is order 1035 right now?,SELECT status FROM orders WHERE order_id = 1035
+Count the Lite orders that were cancelled.,SELECT COUNT(*) FROM orders WHERE product = 'AeroBeat Lite' AND status = 'cancelled'
+Where is order 1055 right now?,SELECT status FROM orders WHERE order_id = 1055
+How many orders came from Lansing?,SELECT COUNT(*) FROM orders WHERE city = 'Lansing'
+List the customers from Lansing who ordered the Max.,SELECT customer FROM orders WHERE city = 'Lansing' AND product = 'AeroBeat Max'
+List the 2 newest Lansing orders.,SELECT order_id FROM orders WHERE city = 'Lansing' ORDER BY order_date DESC LIMIT 2
+Who in Ann Arbor bought the Max?,SELECT customer FROM orders WHERE city = 'Ann Arbor' AND product = 'AeroBeat Max'
+Show the latest 2 orders in Grand Rapids.,SELECT order_id FROM orders WHERE city = 'Grand Rapids' ORDER BY order_date DESC LIMIT 2
+Who in Kalamazoo bought the AeroBeat Sport?,SELECT customer FROM orders WHERE city = 'Kalamazoo' AND product = 'AeroBeat Sport'
+How many times did Lucas order from us?,SELECT COUNT(*) FROM orders WHERE customer = 'Lucas'
+List the customers from Ann Arbor who ordered the Max.,SELECT customer FROM orders WHERE city = 'Ann Arbor' AND product = 'AeroBeat Max'
+List the products ordered by Lina.,SELECT product FROM orders WHERE customer = 'Lina'
+How many orders has Elena placed?,SELECT COUNT(*) FROM orders WHERE customer = 'Elena'
